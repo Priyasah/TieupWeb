@@ -1,0 +1,348 @@
+body {
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+	scroll-behavior: auto;
+}
+
+body #fullpage {
+	width: : 1366px;
+	height: 662px;
+	background-image: url("images/background.jpg");	
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+
+.navbar-brand {
+	font-size: 30px;
+}
+.navbar-brand:hover{
+	color: white; 
+}
+
+
+
+/*=====================OVERLAY HAMBURGER MENU=====================*/
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay .navbar-brand{
+	font-weight: bold;
+	position: fixed;
+	top: 30px;
+	left: 40px;
+	size: 20px;
+}
+.glyphicon-remove{
+	position: fixed;
+	top: 40px;
+	right: 40px;
+	color: white;
+	font-size: 30px;
+	z-index: 3;
+}
+
+#overlay-content {
+	background-color: pink;
+	height: 100%;
+	width: 100%;
+
+}
+
+.inline li{
+
+	text-align: center;
+	size: 30px;
+	color: white;
+}
+
+#loginButton{
+	background-color: #9933ff;
+  	border-radius: 250px;
+}
+
+/*================================================================*/
+
+
+
+
+
+/*=====================NAVIGATION BAR=============================*/
+nav {
+	z-index: 10;
+	width: 100%;
+	padding-top: 17px;
+	padding-left: 10px;
+	padding-right: 30px;
+	position: fixed;
+}
+.navbar-left{
+}
+
+.navbar-brand{
+	color: white;
+	font-family: 'Roboto',sans-serif;
+}
+
+.navbar-right{
+	float: right;
+
+}
+
+.navbar-right li {
+	display: flex;
+	height: 40px;
+	line-height: 13px;
+	outline-color: white;
+	font-weight: bold;
+	font-size: 16px;
+	color:#95a892;
+	float: left;
+	padding: 15px;
+}
+
+li:hover {
+	color:white;
+	background-color:  #644171;
+	border-radius: 7px;
+}
+
+/*changes colour of navbar on scrolling */
+
+/*=================================================================*/
+/* SPINNER LOADER *//*
+.spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #644171;
+z-index: 999999;
+}
+
+.spinner {
+width: 40px;
+height: 40px;
+position: absolute;
+top: 48%;
+left: 48%;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #060e0e;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+*/
+
+/*=========================MAIN BODY======================*/
+#container{
+	width: 100%;
+	height: 73%;
+	position: relative;
+	top: 110px;
+	padding-right: 13%;
+	padding-left: 13%;
+}
+
+.contentmain{
+	border-radius: 10px;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255,255,255,0.8);
+}
+
+#p1{
+	color: black;
+	font-weight: bold;
+	font-size: 55px;
+}
+#p2{
+	font-size: 24px;
+}
+#p3{
+	color: black;
+	font-size: 30px;
+	color: #202020;
+}
+
+#buttoncontainer{
+	width: 100%;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+
+#brandButton{
+	height: 65px;
+	width: 250px;
+	font-size: 20px;
+	background-color: white;
+	color:black;
+	padding: 5px;
+	float: left;
+	border:2px solid grey;
+	border-radius: 5px;
+}
+#brandButton:hover{
+	background-color: #644171;
+	color:white;
+}
+#influencerButton{
+	padding:5px;
+	float: right;
+	height: 65px;
+	width: 250px;
+	font-size: 20px;
+	background-color: #644171;
+	color:white;
+	border:2px solid #644171;
+	border-radius: 5px;
+}
+#influencerButton:hover{
+	background-color: white;
+	color:black;
+}
+
+
+/*========================================================*/
+
+/*================container3==============================*/
+#container3{
+	width: 100%;
+	height: 100px;
+	position: relative;
+	top:300px;
+}
+
+.container3p1 {
+	font-size: 25px;
+	word-spacing:3 px; 
+	color: grey;
+}
+#instaposts{
+	height: 500px;
+	width: 100%;
+	padding-right:12%;
+	padding-left:12%;
+
+}
+#img1{
+	height: 100%;
+	border:1px grey;
+	float: left;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#img2{
+	height: 80%;
+	width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top:10%;
+	position: relative;
+	border:1px grey;
+	float: right;
+}
+#platforms{
+	width: 100%;
+	height: 100px;
+	padding-right: 27%;
+	padding-left: 27%;
+}
+#img3{
+	height: 60px;
+	float: left;
+}
+#img4{
+	height: 60px;
+	float: right;
+}
+
+/*=================================================*/
+
+/*==================== footer ====================*/
+#footer{
+	position: relative;
+	top:1050px;
+	padding-right: 10px;
+	padding-left: 10px;
+	height: 100px;
+	background-color: #202020;
+	width: 100%;
+
+}
+#contact{
+	color: white;
+	font-size: 20px;
+}
+#footnotes{
+	padding-top: 4px;
+	height: 25px;
+}
+#mail{
+	color: black;
+}
+#orgname{
+	color: black;
+}
+#orgname{
+	position: relative;
+	right: -78%;
+}
+
+/*=====================================================*/
+
+/*============== social media icons====================*/
+#socialmediaicons{
+	position: relative;
+	top: 
+	width: 100%;
+	background-color: red;
+	height: 50px;
+}
+
+.media{
+	background-color: pink;
+	padding: 10px;
+	height: 63px;
+}

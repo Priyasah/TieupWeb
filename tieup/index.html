@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	<link rel="icon" type="image/png" href="logo.png" />
+
+		<title>Tieup</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <!--bootstrap cdn-->
+	    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <!--add js file-->
+	    <script type="text/javascript" src="javascript.js"></script>
+	  <!--add css file-->
+	    <link rel="stylesheet" type="text/css" href="default.css">
+	  <!--google font-->
+	   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	</head>
+
+	<body>
+
+		<!--CSS Spinner--><!--
+		<div class="spinner-wrapper">
+		<div class="spinner">
+	 	<div class="double-bounce1"></div>
+	 	<div class="double-bounce2"></div>
+		</div>
+		</div>
+-->
+		<!-- FULLPAGE -->
+		<div id="fullpage">
+			
+
+				<!-- NAVIGATION BAR -->
+				<!--<nav role="NAVIGATION">
+					<a class="navbar-brand" href="index.html" rel="home">TIEUP</a>
+					 
+					<a class="nav-toggle"></a>
+					<ul class="inline">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">About Us</li>
+						<br>
+						<br>
+						<li>Already a member?</li>
+						<li><button id="loginButton">Log In</button></li>
+					</ul>
+					
+
+				</nav>-->
+
+				<nav role="NAVIGATION" id="navbar" class="navbar-fixed-top">
+<!--
+					<div id="overlay">
+
+						<a class="navbar-brand" href="index.html" rel="home">TIEUP</a>
+						<span class="glyphicon glyphicon-remove" onclick="off()"></span>
+						
+						<div id="overlay-content">
+							
+							<ul class="inline"><center>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<br>
+								<br>
+								<li>Already a member?</li>
+								<li><button id="loginButton">Log In</button></li></center>
+							</ul>
+						</div>
+
+					</div>
+
+					  <button type="button" onclick="on()" aria-expanded="false">
+			          <span class="sr-only">Toggle navigation</span>
+			          <span class="icon-bar"></span>
+			          <span class="icon-bar"></span>
+			          <span class="icon-bar"></span>
+			          </button>	
+-->						
+
+						<a class="navbar-brand" href="index.html" rel="home">TIEUP</a>
+						
+							<ul class="nav navbar-right">
+								<li>Home</li>
+								<li>About Us</li>
+								<li>Log In</li>
+							</ul>
+						
+				</nav>
+
+			
+			<!-- MAIN BODY -->
+			<section id="container">
+			<div class="contentmain">
+				<center>
+				<br><br>
+					
+					<p id="p1">Influence  marketing  made  easy.</p><br>
+					<p id="p2">We connect Brands and Influencers to<br> give ads a human voice.</p>
+					<br><br>
+					<p id="p3">Get started now</p>
+					<br><br>
+				<div id="buttoncontainer">
+				<button id="brandButton">I AM A BRAND</button>
+				<button id="influencerButton">I AM AN INFLUENCER</button>
+				</div>
+				</center>
+			</div>	
+			</section>
+
+
+			<section id="container2">
+				
+			</section>
+
+			<section id="container3"><center>
+				<p class="container3p1">Make your campaigns get a human voice</p>
+				<br>
+				<br>
+				<div id="instaposts">
+					<img id=img1 src="images/instapost.png">
+					<img id=img2 src="images/instapost2.png">
+
+				</div>
+				<br>
+				<br>
+				<br>
+				<p class="container3p1">Platforms to get maximum audience reach</p><br><br>
+				<div id="platforms">
+					<img id=img3 src="images/instagram.png">
+					<img id=img4 src="images/youtube.png">
+				</div>
+				</center>
+			</section>
+
+			<section id="footer">
+			<br><center>
+				<p id="contact">For more updates,follow us on</p>
+				<div id="socialmediaicons">
+					<img class="media" src="images/facebook1.png">
+					<img class="media" src="images/insta.png">
+					<img class="media" src="images/linkedin.png">
+					<img class="media" src="images/twitter.png">
+				</div>
+				<br></center><br>
+				<div id="footnotes">
+					<a href="#" id="mail">tieupmailbox@gmail.com</a>
+					<a href="#" id="orgname">Tieup India Pvt. Ltd.</a>
+				<div>
+			</section>
+
+		</div>
+
+		<script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
+     
+
+
+	
+
+		<!-- JQUERY SCRIPT -->
+		<script>
+		$(document).ready(function() {
+		//Preloader
+		$(window).load(function() {
+		preloaderFadeOutTime = 500;
+		function hidePreloader() {
+		var preloader = $('.spinner-wrapper');
+		preloader.fadeOut(preloaderFadeOutTime);
+		}
+		hidePreloader();
+		});
+		});
+		</script>
+
+		
+	</body>
+</html>
